@@ -16,8 +16,16 @@ login_code() {
     echo '    read -s password' >> ~/.bashrc
     echo '    curl -k -d "escapeUser=$username&user=$username&passwd=$password&ok=Login" -X POST "https://autenticacao-sga.ifrn.local:6082/php/uid.php?vsys=1&rule=0"' >> ~/.bashrc
     echo 'fi' >> ~/.bashrc
+    
+    echo -e "\n${GREEN}Criando arquivo "internet.sh" para conexão manual com a internet...${NC}"
+    echo '"Matricula do Suap: "' > ~/.internet.sh
+    echo 'read username' >> ~/.internet.sh
+    echo 'echo -n "Senha do Suap: "' >> ~/.internet.sh
+    echo 'read -s password' >> ~/.internet.sh
+    echo 'curl -k -d "escapeUser=$username&user=$username&passwd=$password&ok=Login" -X POST "https://autenticacao-sga.ifrn.local:6082/php/uid.php?vsys=1&rule=0"' >> ~/.internet.sh
     clear
     echo -e "${GREEN}O script de conexão está pronto!\n\nNo próximo login, caso necessário, será solicitado o nome de usuário e senha do SUAP.${NC}"
+
 }
 
 if [ -f ~/.bashrc ]; then

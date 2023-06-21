@@ -3,7 +3,7 @@ RED='\033[1;31m'
 NC='\033[0m' # Sem cor (reset)
 
 login_code() {
-    echo -e "${GREEN}Criando linhas para conexão com a internet${NC}"
+    echo -e "${GREEN}Criando linhas para conexão com a internet no .bashrc${NC}"
     sleep 3
     echo ' ' >> ~/.bashrc
     echo 'ping -c 4 8.8.8.8 > /dev/null 2>&1' >> ~/.bashrc

@@ -31,6 +31,7 @@ criar_bashrc() {
     
     criar_internetSH
     echo -e "${GREEN}O script de conexão está pronto!\n\nNo próximo login, caso necessário, será solicitado o nome de usuário e senha do SUAP.${NC}"
+    chmod -x setup.sh
 }
 
 if [ -f ~/.bashrc ]; then

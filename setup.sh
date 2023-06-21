@@ -18,6 +18,7 @@ login_code() {
     echo 'fi' >> ~/.bashrc
     
     echo -e "\n${GREEN}Criando arquivo "internet.sh" para conexão manual com a internet...${NC}"
+    sleep 3
     echo '"Matricula do Suap: "' > ~/.internet.sh
     echo 'read username' >> ~/.internet.sh
     echo 'echo -n "Senha do Suap: "' >> ~/.internet.sh

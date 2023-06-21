@@ -4,7 +4,7 @@ NC='\033[0m' # Sem cor (reset)
 
 criar_internetSH() {
     echo -e "\n${GREEN}Criando arquivo 'internet.sh' para conexão manual com a internet...${NC}"
-    sleep 4
+    sleep 5
     echo 'echo -n "Matricula do Suap: "' > ~/internet.sh
     echo 'read username' >> ~/internet.sh
     echo 'echo -n "Senha do Suap: "' >> ~/internet.sh

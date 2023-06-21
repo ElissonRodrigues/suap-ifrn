@@ -17,7 +17,7 @@ criar_internetSH() {
 criar_bashrc() {
     echo -e "${GREEN}Criando linhas para conexão com a internet no .bashrc${NC}"
     sleep 3
-    echo ' ' >> ~/.bashrc
+    echo '' >> ~/.bashrc
     echo 'ping -c 4 8.8.8.8 > /dev/null 2>&1' >> ~/.bashrc
     echo 'if [ $? -eq 0 ]; then' >> ~/.bashrc
     echo '    echo' >> ~/.bashrc

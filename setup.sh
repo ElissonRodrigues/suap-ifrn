@@ -30,7 +30,7 @@ criar_bashrc() {
     echo 'fi' >> ~/.bashrc
     
     criar_internetSH
-    echo -e "${GREEN}O script de conexão está pronto!\n\nNo próximo login, caso necessário, será solicitado o nome de usuário e senha do SUAP.${NC}"
+    echo -e "${GREEN}O script de conexão foi Instalado!\n\nNo próximo login, caso necessário, será solicitado o nome de usuário e senha do SUAP.${NC}"
     echo -e "\n\n${RED}Se você digitar a senha incorreta, utilize o comando ‘./internet.sh’ para se conectar manualmente à internet.${NC}\n"
     chmod -x setup.sh
 }
